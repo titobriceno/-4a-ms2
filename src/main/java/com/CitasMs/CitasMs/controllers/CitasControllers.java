@@ -50,9 +50,9 @@ public class CitasControllers {
     Que me debe devolver: Una Cancelacion
      */
 
-    @DeleteMapping("/citas/{pacientId}")
-    public void deleteCitas(@PathVariable String patienteId){
-        repository.deleteById(patienteId);
+    @DeleteMapping("/citas/{Id}")
+    public void deleteCitas(@PathVariable String Id){
+        repository.deleteById(Id);
     }
 
     /*
